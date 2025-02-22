@@ -1,0 +1,88 @@
+Streamlit App for Data Management & Search with PostgreSQL Integration
+Key Features:
+1. Data Entry Page (User Input Form)
+Users can input and upload various types of information, which will be stored in a PostgreSQL database:
+
+Personal Details
+
+Full Name
+Father’s Name
+Mother’s Name
+Date of Birth
+Gender
+National ID (NID) Number
+Voter Number
+Permanent Address
+Present Address
+Image Upload
+
+Users can upload an image.
+The image will be uploaded via the IMGBB API, and the generated image link will be stored in the database.
+
+Multiple PDF Uploads
+Users can upload multiple PDF files.
+Each uploaded PDF will be automatically converted into images.
+The converted images will be uploaded via IMGBB API, and all generated image links will be stored in the database.
+
+Contact Details
+Multiple Mobile Numbers
+Multiple WhatsApp Number
+Multiple Social Media & Web Links
+Multiple Facebook Profile Links
+Multiple Website Links
+
+Description Field
+Users can enter a text-based description related to the data.
+
+2. Data Listing & Details Page
+Displays a list of stored records from the PostgreSQL database.
+Clicking on an entry opens a detailed view that shows all stored information for that record.
+Update functionality is available to edit any field and update the record in the database in real time .there will be button for save changes.
+
+3. Search & Update Page
+Users can search for records by name.
+The search results will be displayed as search result cards containing all essential details.
+Clicking on a result card opens the detailed view of that record.
+Update functionality is available to edit any field and update the record in the database in real time .there will be button for save changes.
+Database: PostgreSQL
+
+The app will use PostgreSQL to store and manage user data efficiently.
+Data retrieval, search queries, and updates will be handled using optimized SQL queries.
+Additional Improvements & Considerations
+User-Friendly UI: The app will have a clean and intuitive interface using Streamlit.
+Efficient Data Processing: Image and PDF processing will be handled smoothly to ensure fast storage and retrieval.
+Security & Validation: Proper validation checks for form inputs, file types, and user-generated content.
+
+Create a Data Management System with the following specifications:
+1. Technology Stack:
+- Streamlit for the frontend
+- PostgreSQL for the database
+- Python 3.11
+- Libraries: pdf2image, pillow, psycopg2-binary, requests, streamlit
+2. Features:
+- Data entry form for personal information (name, parents' info, DOB, gender, NID, voter info, addresses)
+- File upload capability for profile images and PDF documents
+- PDF to image conversion and storage
+- Image hosting integration with ImgBB
+- Search functionality
+- Detailed record viewing
+- Card-based record listing
+3. Database Structure:
+- persons table: Basic personal information
+- contact_info table: Mobile and WhatsApp numbers
+- social_links table: Facebook and website URLs
+- documents table: Store document URLs and metadata
+4. Required Environment Variables:
+- PGDATABASE: PostgreSQL database name
+- PGUSER: Database username
+- PGPASSWORD: Database password
+- PGHOST: Database host
+- PGPORT: Database port
+- IMGBB_API_KEY: ImgBB API key for image hosting
+5. File Structure:
+- app.py: Main application entry point
+- components.py: UI components and form renderers
+- database.py: Database operations and table creation
+- utils.py: Helper functions for file operations
+- .streamlit/config.toml: Streamlit configuration
+

@@ -1,0 +1,7 @@
+
+pandas>=2.2.3
+pdf2image>=1.17.0
+psycopg2-binary>=2.9.10
+requests>=2.32.3
+streamlit>=1.42.1
+twilio>=9.4.5
