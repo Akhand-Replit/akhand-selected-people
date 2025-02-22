@@ -1,1 +1,2 @@
-data - gazipuroffice - neon.tech - postgress - free
+data - Workgazipur - neon.tech - postgress - free
+deploy - streamlit.io - repit
