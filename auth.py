@@ -17,7 +17,7 @@ def login_form():
 
     st.markdown("""
         <div style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-        <h1 style="text-align: center; margin-bottom: 2rem;">Data Management System</h1>
+        <h1 style="text-align: center; margin-bottom: 2rem;">Akhand People</h1>
             <h2 style="text-align: center; margin-bottom: 2rem;">🔐 Login Required</h2>
         </div>
     """, unsafe_allow_html=True)
