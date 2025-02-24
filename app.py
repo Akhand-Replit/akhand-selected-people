@@ -14,7 +14,7 @@ if not login_form():
 db.create_tables()
 
 st.set_page_config(
-    page_title="Data Management System",
+    page_title="Akhand People",
     page_icon="📊",
     layout="centered"
 )
