@@ -38,7 +38,7 @@ if st.sidebar.button("Logout"):
     st.rerun()
 
 # Main content
-st.title("Data Management System")
+st.title("Akhand People")
 
 if st.session_state.current_page == 'data_entry':
     st.header("Data Entry")
